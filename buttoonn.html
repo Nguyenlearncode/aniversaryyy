@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrect</title>
+    <link rel="stylesheet" href="Sytlesheet/Style.css">
+
+
+    </head>
+    <body>
+        <h1><span>CHÚC MỪNG NGÀY KỶ NIỆM</span></h1> 
+        <button class="my-button" id="moveButton" title = "Ấn nhiều vàooo!!">Ấn vào đây để gửi lời yêu thương đến aiu</button>
+        <div id="message" class="message">EHEHE !! Cảm ơn em đã cố gửi lời yêu thương đến anh. Anh yêu em nhiều lắm &#10084</div> <!-- Chỗ để hiện thông báo -->
+        <button class="my-button" id="closeButton">Đóng thông báo </button>
+        <p> Trong suốt thời gian qua, em đã luôn ở bên anh, chia sẻ niềm vui và nỗi buồn, làm cho cuộc sống của anh trở
+             nên ý nghĩa hơn bao giờ hết. Những kỷ niệm đẹp, những lần cùng nhau vượt qua thử thách đã giúp chúng ta gắn bó hơn
+             . Anh thật sự may mắn khi có em trong cuộc đời. 
+             Hy vọng chúng ta sẽ tiếp tục đồng hành bên nhau trong nhiều năm tới!</p>
+        <script>
+            const button = document.getElementById('moveButton');
+            const messageDiv = document.getElementById('message');
+            const closeButton = document.getElementById('closeButton');
+            let clickCount = 0; // Biến đếm số lần nhấn
+    
+            button.addEventListener('click', () => {
+                clickCount++; // Tăng biến đếm
+    
+                // Kiểm tra số lần nhấn
+                if (clickCount === 5) {
+                    messageDiv.style.display = 'inline-block'; // Hiện thông báo
+                    closeButton.style.display = 'inline-block'; // Hiện nút tắt
+                    clickCount = 0; // Đặt lại biến đếm
+                }
+            });
+    
+            closeButton.addEventListener('click', () => {
+                messageDiv.style.display = 'none'; // Ẩn thông báo
+                closeButton.style.display = 'none'; // Ẩn nút tắt
+            });
+        </script>
+        <h1>KỶ NIỆM TẸC DỜI NHỨT CỦA ANHHH!!!!</h1>
+        <div class="grid"></div>
+            <img src="Image/IMG_1703485211380_1703485516271.jpg" alt="Image 1">
+            <img src="Image/IMG_1719072804083_1719075188470.jpg" alt="Image 2">
+            <img src="Image/IMG_20221111_203449_796.jpg" alt="Image 3">
+            <img src="Image/IMG_20221222_203214_177.jpg" alt="Image 4">
+            <img src="Image/IMG_20221226_195425_783.jpg" alt="Image 5">
+            <img src="Image/IMG_20221226_195626_693.jpg" alt="Image 6">
+            <img src="Image/IMG_20221226_195802_069.jpg" alt="Image 7">
+            <img src="Image/IMG_20230127_205438_022.jpg" alt="Image 8">
+            <img src="Image/IMG_20230205_181151_963.webp" alt="Image 9" >
+            <img src="Image/IMG_20230308_211752_249.webp" alt="Image 10" >
+            <img src="Image/IMG_20231101_190747.jpg" alt="Image 11">
+            <img src="Image/IMG_20240224_220342.jpg" alt="Image 13" >
+            <img src="Image/IMG_20240321_220904.jpg" alt="Image 14">
+            <img src="Image/IMG_20240422_200222.jpg" alt="Image 15">
+
+            <img src="Image/Locket_1713791897676_82.jpg" alt="Image 18">
+        </div>
+        </body> 
+</html>

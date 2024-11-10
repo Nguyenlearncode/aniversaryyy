@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mở Quà</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6f2; /* Nền hồng nhạt */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 3px solid #ffc0cb; /* Viền hồng nhẹ */
+        }
+        .card h1 {
+            color: #ff5f6d;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .gift-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(45deg, #ff5f6d, #ffc371);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .gift-button:hover {
+            background: linear-gradient(45deg, #ffc371, #ff5f6d);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .gift-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .message {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+    <script>
+        function openGift() {
+            // Yêu cầu người dùng nhập ngày và tháng
+            const day = prompt("Nhâp ngày mình quen nhau:");
+            const month = prompt("Nhâp tháng mình quen nhau:");
+            
+            // Kiểm tra nếu cả ngày và tháng đều là 11
+            if (day === "11" && month === "11") {
+                window.location.href = 'buttoonn.html'; // Chuyển hướng nếu đúng
+            } else {
+                alert("Ngày và tháng bạn nhập không đúng. Vui lòng thử lại."); // Thông báo nếu sai
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Thiệp Chúc Mừng</h1>
+        <p class="message">Chúc bạn có một ngày tuyệt vời và nhiều niềm vui. Nhấn nút bên dưới để nhận món quà đặc biệt của bạn!</p>
+        <button class="gift-button" onclick="openGift()">Bấm vào đây để mở quà</button>
+    </div>
+
+</body>
+</html>
